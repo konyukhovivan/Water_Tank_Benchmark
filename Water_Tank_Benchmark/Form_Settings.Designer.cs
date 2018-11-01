@@ -1,6 +1,6 @@
 ﻿namespace Water_Tank_Benchmark
 {
-    partial class Form_Settings
+    partial class form_Settings
     {
         /// <summary>
         /// Required designer variable.

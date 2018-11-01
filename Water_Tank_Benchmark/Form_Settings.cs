@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Water_Tank_Benchmark
 {
-    public partial class Form_Settings : Form
+    public partial class form_Settings : Form
     {
-        public Form_Settings()
+        public form_Settings()
         {
             InitializeComponent();
         }

@@ -54,31 +54,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form_Main.cs">
+    <Compile Include="form_Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Main.Designer.cs">
-      <DependentUpon>Form_Main.cs</DependentUpon>
+    <Compile Include="form_Main.Designer.cs">
+      <DependentUpon>form_Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Settings.cs">
+    <Compile Include="form_Settings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Settings.Designer.cs">
-      <DependentUpon>Form_Settings.cs</DependentUpon>
+    <Compile Include="form_Settings.Designer.cs">
+      <DependentUpon>form_Settings.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Form_About.cs">
+    <Compile Include="form_About.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_About.Designer.cs">
-      <DependentUpon>Form_About.cs</DependentUpon>
+    <Compile Include="form_About.Designer.cs">
+      <DependentUpon>form_About.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form_Main.resx">
-      <DependentUpon>Form_Main.cs</DependentUpon>
+    <EmbeddedResource Include="form_Main.resx">
+      <DependentUpon>form_Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Settings.resx">
-      <DependentUpon>Form_Settings.cs</DependentUpon>
+    <EmbeddedResource Include="form_Settings.resx">
+      <DependentUpon>form_Settings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -89,8 +89,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form_About.resx">
-      <DependentUpon>Form_About.cs</DependentUpon>
+    <EmbeddedResource Include="form_About.resx">
+      <DependentUpon>form_About.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

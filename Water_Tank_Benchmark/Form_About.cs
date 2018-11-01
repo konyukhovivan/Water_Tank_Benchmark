@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Water_Tank_Benchmark
 {
-    partial class Form_About : Form
+    partial class form_About : Form
     {
-        public Form_About()
+        public form_About()
         {
             InitializeComponent();
             this.Text = String.Format("About {0}", AssemblyTitle);

@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Water_Tank_Benchmark
 {
-    public partial class Form_Main : Form
+    public partial class form_Main : Form
     {
-        private Form_About frm_about;
-        private Form_Settings frm_set;
+        private form_About frm_about;
+        private form_Settings frm_set;
 
-        public Form_Main()
+        public form_Main()
         {
             InitializeComponent();
-            frm_about = new Form_About();
-            frm_set = new Form_Settings();
+            frm_about = new form_About();
+            frm_set = new form_Settings();
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
