@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Water_Tank_Benchmark")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Water Tank Benchmark")]
+[assembly: AssemblyDescription("The C# implementation of the Water Tank Benchmark for the joint paper by Thomas Baar, Horst Schulte, Vladimir Zyubin, Nikolay Shilov, Ivan Konyuhov, Tatiana Liakh, Andrei Rozov, Innokenty Shilov.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Water_Tank_Benchmark")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
+[assembly: AssemblyCompany("Innopolis University")]
+[assembly: AssemblyProduct("Water Tank Benchmark")]
+[assembly: AssemblyCopyright("Dr. Konyukhov I. © 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
