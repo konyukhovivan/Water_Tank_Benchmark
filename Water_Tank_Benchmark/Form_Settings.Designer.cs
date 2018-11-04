@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button_Default = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
+            this.button_Accept = new System.Windows.Forms.Button();
+            this.button_Reject = new System.Windows.Forms.Button();
+            this.propertyGrid_Settings = new System.Windows.Forms.PropertyGrid();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -45,13 +45,24 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button_Default);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 370);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(2);
             this.panel1.Size = new System.Drawing.Size(284, 35);
             this.panel1.TabIndex = 0;
+            // 
+            // button_Default
+            // 
+            this.button_Default.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_Default.Location = new System.Drawing.Point(2, 2);
+            this.button_Default.Name = "button_Default";
+            this.button_Default.Size = new System.Drawing.Size(280, 31);
+            this.button_Default.TabIndex = 0;
+            this.button_Default.Text = "Set as in the article";
+            this.button_Default.UseVisualStyleBackColor = true;
+            this.button_Default.Click += new System.EventHandler(this.button_Default_Click);
             // 
             // panel2
             // 
@@ -71,66 +82,61 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.button1);
+            this.splitContainer1.Panel1.Controls.Add(this.button_Accept);
             this.splitContainer1.Panel1.Padding = new System.Windows.Forms.Padding(2);
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.button2);
+            this.splitContainer1.Panel2.Controls.Add(this.button_Reject);
             this.splitContainer1.Panel2.Padding = new System.Windows.Forms.Padding(2);
             this.splitContainer1.Size = new System.Drawing.Size(284, 37);
             this.splitContainer1.SplitterDistance = 140;
             this.splitContainer1.TabIndex = 0;
             // 
-            // button1
+            // button_Accept
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Location = new System.Drawing.Point(2, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 33);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Accept changes";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button_Accept.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_Accept.Location = new System.Drawing.Point(2, 2);
+            this.button_Accept.Name = "button_Accept";
+            this.button_Accept.Size = new System.Drawing.Size(136, 33);
+            this.button_Accept.TabIndex = 0;
+            this.button_Accept.Text = "Accept changes";
+            this.button_Accept.UseVisualStyleBackColor = true;
+            this.button_Accept.Click += new System.EventHandler(this.button_Accept_Click);
             // 
-            // button2
+            // button_Reject
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Location = new System.Drawing.Point(2, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(136, 33);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Reject changes";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button_Reject.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button_Reject.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_Reject.Location = new System.Drawing.Point(2, 2);
+            this.button_Reject.Name = "button_Reject";
+            this.button_Reject.Size = new System.Drawing.Size(136, 33);
+            this.button_Reject.TabIndex = 1;
+            this.button_Reject.Text = "Reject changes";
+            this.button_Reject.UseVisualStyleBackColor = true;
+            this.button_Reject.Click += new System.EventHandler(this.button_Reject_Click);
             // 
-            // button3
+            // propertyGrid_Settings
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Location = new System.Drawing.Point(2, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(280, 31);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Set as in the article";
-            this.button3.UseVisualStyleBackColor = true;
+            this.propertyGrid_Settings.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.propertyGrid_Settings.Location = new System.Drawing.Point(0, 0);
+            this.propertyGrid_Settings.Name = "propertyGrid_Settings";
+            this.propertyGrid_Settings.Size = new System.Drawing.Size(284, 333);
+            this.propertyGrid_Settings.TabIndex = 2;
+            this.propertyGrid_Settings.PropertyValueChanged += new System.Windows.Forms.PropertyValueChangedEventHandler(this.propertyGrid_Settings_PropertyValueChanged);
             // 
-            // propertyGrid1
-            // 
-            this.propertyGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.propertyGrid1.Location = new System.Drawing.Point(0, 0);
-            this.propertyGrid1.Name = "propertyGrid1";
-            this.propertyGrid1.Size = new System.Drawing.Size(284, 333);
-            this.propertyGrid1.TabIndex = 2;
-            // 
-            // Form_Settings
+            // form_Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.button_Reject;
             this.ClientSize = new System.Drawing.Size(284, 405);
             this.ControlBox = false;
-            this.Controls.Add(this.propertyGrid1);
+            this.Controls.Add(this.propertyGrid_Settings);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Form_Settings";
+            this.Name = "form_Settings";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -148,11 +154,11 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button_Default;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PropertyGrid propertyGrid1;
+        private System.Windows.Forms.Button button_Accept;
+        private System.Windows.Forms.Button button_Reject;
+        private System.Windows.Forms.PropertyGrid propertyGrid_Settings;
     }
 }

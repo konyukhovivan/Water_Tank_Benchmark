@@ -74,6 +74,7 @@
     <Compile Include="form_About.Designer.cs">
       <DependentUpon>form_About.cs</DependentUpon>
     </Compile>
+    <Compile Include="States.cs" />
     <EmbeddedResource Include="form_Main.resx">
       <DependentUpon>form_Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,6 +108,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Water_Tank_Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Water_Tank_System\Water_Tank_System.csproj">
+      <Project>{9d288b13-6f4d-4deb-933f-9a2af9f46608}</Project>
+      <Name>Water_Tank_System</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

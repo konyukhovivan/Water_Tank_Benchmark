@@ -4,52 +4,42 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using System.ComponentModel;
+
 namespace Water_Tank_System
 {
     /// <summary>
     /// Water Tank
     /// </summary>
-    public class Water_Tank : ICloneable
+    public class Tank : ICloneable
     {
         /// <summary>
         /// Water tank default parameters
         /// </summary>
-        public Water_Tank()
-        {
-            Dt = 0.1;
+        public Tank()
+        {            
             H = 0.65;
+            Dt = 0.1;
             Dout = 0.006;
         }
-       
+
         /// <summary>
         /// Water tank diameter, m
         /// </summary>
-        public double Dt
-        {
-            get { return Dt; }
-            set { Dt = value; }
-        }
+        public double Dt;
 
         /// <summary>
         /// Water tank height, m
         /// </summary>
-        public double H
-        {
-            get { return H; }
-            set { H = value; }
-        }
+        public double H;
 
         /// <summary>
         /// Outfill oricife diameter, m
         /// </summary>
-        public double Dout
-        {
-            get { return Dout; }
-            set { Dout = value; }
-        }
+        public double Dout;
 
         /// <summary>
-        /// Water tank crass-sectional area, m^2
+        /// Water tank cross-sectional area, m^2
         /// </summary>
         public double At
         {
@@ -57,7 +47,7 @@ namespace Water_Tank_System
         }
 
         /// <summary>
-        /// Outfill crass-sectional area, m^2
+        /// Outfill cross-sectional area, m^2
         /// </summary>
         public double Aout
         {
@@ -65,11 +55,8 @@ namespace Water_Tank_System
         }
 
         /// <summary>
-        /// Current water level, m
+        /// Clone
         /// </summary>
-        public double x;
-
-
         public object Clone()
         {
             return this.MemberwiseClone();
